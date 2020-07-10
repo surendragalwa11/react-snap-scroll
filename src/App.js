@@ -37,6 +37,8 @@ function checkScroll() {
 function App() {
 	scrollSnapPolyfill();
 
+	const videos = ['/videos/v1.mov', '/videos/v3.mp4', '/videos/v4.mp4'];
+
 
 	useEffect(() => {
 		// on mount
@@ -52,22 +54,17 @@ function App() {
 	return (
 		<div class="wrapper">
 			<div class="container" onScroll={checkScroll}>
-				<video src='/videos/v1.mov'
-					// autoPlay
-					controls
-					loop
-					muted
-				/>
-				<video src='/videos/v3.mp4'
-					controls
-					loop
-					muted
-				/>
-				<video src='/videos/v4.mp4'
-					controls
-					loop
-					muted
-				/>
+				{
+					videos.map((v, i) => (
+						<video
+							key={i}
+							src={v}
+							controls
+							loop
+							muted
+						/>
+					))
+				}
 			</div>
 		</div>
 	);
