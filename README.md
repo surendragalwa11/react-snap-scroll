@@ -1,14 +1,14 @@
-## Steps to Run the application
+# Steps to Run the application
 
-# Step: 1
+## Step: 1
 
 Clone the source code
 
-# Step: 2
+## Step: 2
 
 Navigate into the source code directory
 
-# Step: 3
+## Step: 3
 
 Install the dependencies
 
@@ -16,7 +16,7 @@ Install the dependencies
 npm install
 ```
 
-# Step: 4
+## Step: 4
 
 Run the application
 
@@ -24,7 +24,7 @@ Run the application
 npm start
 ```
 
-# Step: 5
+## Step: 5
 
 Application should start running at port 3000
 
