@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
@@ -37,6 +37,8 @@ function checkScroll() {
 function App() {
 	scrollSnapPolyfill();
 
+	const [likedIndex, setLikedIndex] = useState([])
+
 	const videos = ['/videos/v1.mov', '/videos/v3.mp4', '/videos/v4.mp4'];
 
 
@@ -51,18 +53,40 @@ function App() {
 		}
 	}, [])
 
+	const onLike = (i) => {
+		let indexes = [];
+		if (likedIndex.indexOf(i) !== -1) {
+			indexes = likedIndex.filter(ind => ind !== i);
+		} else {
+			indexes = [...likedIndex, i]
+		}
+		setLikedIndex(indexes);
+	}
+
 	return (
 		<div class="wrapper">
 			<div class="container" onScroll={checkScroll}>
 				{
 					videos.map((v, i) => (
-						<video
-							key={i}
-							src={v}
-							controls
-							loop
-							muted
-						/>
+						<div className='video-container'>
+							<video
+								key={i}
+								src={v}
+								controls
+								loop
+								muted
+							/>
+							<div className='video-options'>
+								<button
+									className={likedIndex.indexOf(i) !== -1 ? 'active-btn' : ''}
+									onClick={() => onLike(i)}
+								>
+									Like
+								</button>
+								<button>Comment</button>
+								<button>Share</button>
+							</div>
+						</div>
 					))
 				}
 			</div>

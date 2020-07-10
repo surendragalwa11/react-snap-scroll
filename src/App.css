@@ -27,3 +27,25 @@ video {
   scroll-snap-align: start;
   background: cornsilk;
 }
+
+.video-container {
+	position: relative;
+}
+
+.video-options {
+	position: absolute;
+	bottom: 12%;
+	right: 2%;
+	display: flex;
+    flex-direction: column;
+}
+
+button {
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.active-btn {
+	background-color: antiquewhite;
+}
