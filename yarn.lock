@@ -3322,6 +3322,13 @@ css-prefers-color-scheme@^3.1.1:
   dependencies:
     postcss "^7.0.5"
 
+css-scroll-snap-polyfill@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/css-scroll-snap-polyfill/-/css-scroll-snap-polyfill-0.1.2.tgz#a2277b82715ed542fa7ac24702b61889107d0853"
+  integrity sha512-IECQUnfBdRixPpraCkHM0DMf6bt56SV3AdfvkWqw2VyaAwDQpHRaJSn+VkD5fLJj1Eivje1qxgdPmjLCeMBhWQ==
+  dependencies:
+    polyfill "^0.1.0"
+
 css-select-base-adapter@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/css-select-base-adapter/-/css-select-base-adapter-0.1.1.tgz#3b2ff4972cc362ab88561507a95408a1432135d7"
@@ -6263,6 +6270,11 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
+json3@3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/json3/-/json3-3.2.4.tgz#689c589e7ca9340c7ee4949e0d105bc5bf159f21"
+  integrity sha512-F2R+w8lYbeme21HBvmfTXK3ogopKze5Abjb0cF5mEsZ4KJmDwzR6oO8XsUrrBP0yzpqBRYImh32ci6JKFrte7Q==
+
 json3@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.3.tgz#7fc10e375fc5ae42c4705a5cc0aa6f62be305b81"
@@ -7636,6 +7648,13 @@ pnp-webpack-plugin@1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+polyfill@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/polyfill/-/polyfill-0.1.0.tgz#ded507cb76802804834b3385dfd3ba2e51004c3d"
+  integrity sha512-EL2FdBj6IBG41Fxd4IoEX3fCDKccLmtlYMS5cCUR4k/rmrc0vRSLLqbgWIy7OQi2oQfNxipQYCckiebomiohyg==
+  dependencies:
+    json3 "3.2.4"
+
 portfinder@^1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.25.tgz#254fd337ffba869f4b9d37edc298059cb4d35eca"
@@ -8484,9 +8503,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^4.1.0:
   version "4.3.4"
